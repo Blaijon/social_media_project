@@ -1,0 +1,400 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-family: sans-serif;
+}
+// HEADER
+header{
+  background: #3B5998;
+  padding:15px;
+}
+a{
+  text-decoration: none;
+  color: #2196F3;
+  transition: all .4s ease-in-out;
+  &:hover{
+    color: red;
+  }
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+}
+header .fas{
+  color: white;
+  font-size: 16px;
+
+}
+header .logo-area{
+  color: white;
+  display:inline-block;
+  width: 20%;
+  margin-left: -4px;
+  a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+}
+
+header .menu{
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+  border-right: 1px solid rgba(255,255,255,.3);
+text-align: right;
+padding-right: 20px;
+    ul li{
+      display: inline-block;
+      a{
+        margin-right: 20px;
+      }
+    }
+}
+
+.icon-links{
+  display: inline-block;
+  width: 20%;
+  margin-left: -4px;
+  padding-left: 20px;
+    ul li{
+      display: inline-block;
+      margin-right: 10px;
+    }
+}
+
+header .icon-links .quick-options{
+  display: inline-block;
+  margin-left: -4px;
+  border-right: 1px solid rgba(255,255,255,.3);
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+header .icon-links .privacy{
+  display: inline-block;
+  margin-left: -4px;
+  padding-left: 20px;
+}
+header .search-area{
+  display: inline-block;
+  width: 40%;
+    margin-left: -4px;
+  text-align: right;
+  ul li{
+    display: inline-block;
+  }
+}
+//
+
+#top-area{
+  padding: 200px 15px 90px 15px;
+  background:  url(//c1.staticflickr.com/5/4556/24708106728_3d933d30d9_k.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .profile-info .user-details{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+      h3{
+        color: white;
+        font-size: 24px;
+        font-weight:300;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      a{
+        background: rgba(255, 255, 255, .3);
+        display: inline-block;
+        margin-left: -4px;
+        width: 45%;
+        margin-right: 5%;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-size: 10px;
+        padding: 10px;
+        -webkit-border-radius:3px;
+        -moz-border-radius:3px;
+        border-radius:3px;
+        background: rgba(255,255,255,.3);
+        transition: background .6s ease-in-out;
+          &:hover{
+            background: #2196F3;
+          }
+      }
+  }
+}
+#top-area .profile-info .user-img{
+  padding: 10px;
+  display: inline-block;
+    img{
+      border-radius: 50%;
+    }
+}
+
+
+
+#content-area{
+  background: #FAFAFA;
+  overflow: auto;
+  padding: 50px 0;
+  .side-column{
+    width: 35%;
+    float: left;
+    margin:0 2.5%;
+    max-width:360px;
+  }
+    .widget-box{
+      .head{
+        .widget-icon-container{
+          display: inline-block;
+        }
+        .widget-title{
+          display: inline-block;
+          padding:0 0 0 10px;
+        }
+        .widget-icon{
+          background: #BFBFBF;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          color:#fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 5px;
+          // .fas{
+          //   max-width: 50%;
+          //   font-size: 22px;
+          // }
+        }
+
+    }
+
+    margin:0 0 15px 0;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0px 2px 5px -1px rgba(138,138,138,1);
+    -webkit-box-shadow: 0px 2px 5px -1px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 2px 5px -1px rgba(138,138,138,1);
+    padding: 15px;
+    overflow: auto;
+  }
+  .main-area{
+    .widget-box.post{
+      overflow: auto;
+      .head{
+        margin: 0 0 15px 0;
+      }
+      .body{
+        padding:0;
+      }
+      .body .post-img img{
+        width:100%;
+      }
+    }
+    .widget-box.post .head .user-img{
+      display: inline-block;
+      float: left;
+      background: url(https://s3.amazonaws.com/uifaces/faces/twitter/glif/128.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 40px;
+      width: 40px;
+      margin: 0;
+      border-radius: 50%;
+    }
+  .widget-box.post{
+    .body{
+      padding: 0;
+      .top-icons{
+        width: 100%;
+        padding: 15px 0;
+        color:#A8A8A8;
+
+        .fa{
+          font-size: 20px;
+        }
+        .fa-thumbs-up{
+          margin-right: 15px;
+        }
+        span{
+          float:right;
+          margin-right: 15px;
+        }
+
+      }
+      .post-img img{
+        width: 100%;
+      }
+      .post-comments{
+        background: #E0E0E0;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 15px;
+      }
+      .post-comments .user-img{
+        display: inline-block;
+        overflow: auto;
+        float: left;
+        width: 8%;
+      }
+      .post-comments .user-comment{
+        display: inline-block;
+        float: left;
+        width: 92%;
+        font-size: 14px;
+        .user-info{
+          margin: 5 0 10px 0;
+          .time{
+            color: #A8A8A8;
+            font-size: 12px;
+            float: right;
+          }
+        }
+      }
+      .post-comments .user-img img{
+        width:100%;
+        border-radius: 50%;
+        float: left;
+        width: 40px;
+        height: 40px;
+      }
+      .post-comments::after{
+        content: " ";
+        clear: both;
+        display: table;
+      }
+      .post-form img{
+        width: 100%;
+        border-radius: 50%;
+      }
+      .post-form{
+        padding: 15px 0 0 0;
+      }
+      .post-form .user-img{
+        display: inline-block;
+        overflow: auto;
+        float: left;
+        width: 8%;
+      }
+      .post-form .form-info{
+        display: inline-block;
+        float: left;
+        width: 92%;
+        font-size: 14px;
+        padding: 10px 0;
+        border-bottom: 1px solid #ABABAB;
+        input{
+          width: 80%;
+          border: 0 solid #fff;
+          font-size: 18px;
+          &:active{
+            width: 80%;
+            border: 0 solid #fff;
+            font-size: 18px;
+            outline: none;
+          }
+        }
+        .icons{
+          display: inline-block;
+          float: right;
+          .fas{
+            font-size: 20px;
+            margin: 0 15px 0 0;
+          }
+        }
+      }
+
+      .post-form .user-img img{
+        width:100%;
+        border-radius: 50%;
+        float: left;
+        width: 40px;
+        height: 40px;
+      }
+      .post-form::after{
+        content: " ";
+        clear: both;
+        display: table;
+      }
+    }
+  }
+    .widget-box.post .head{
+      &::after{
+        content: " ";
+        clear: both;
+        display: table;
+      }
+     .post-info{
+      display: inline-block;
+      float: left;
+      width: 92%;
+      .user-info{
+        display: block;
+        font-size: 14px;
+        margin: 4px 0 6px 0;
+      }
+      .post-data{
+        display: block;
+        font-size: 12px;
+        color: #ABABAB;
+      }
+    }
+  }
+    .widget-box .submenu{
+      padding: 0;
+       margin: 0;
+      margin: 0 0 20px 0;
+    }
+      .submenu ul{
+        margin: 0;
+        padding: 0;
+        li{
+          display: inline-block;
+          width: 20%;
+          float:left;
+          text-align: center;
+          border-bottom: 3px solid #fff;
+          transition: all .6s ease-in-out;
+          cursor: pointer;
+          padding: 10px;
+          .fas{
+            font-size: 20px;
+
+          }
+          span{
+            display: block;
+            margin: 15px 0 0 0;
+            text-transform: uppercase;
+            font-size: 14px;
+          }
+          &:hover{
+            border-bottom: 3px solid #2196F3;
+            color: #2196F3;
+
+          }
+          &:nth-child(5){
+            padding: 28px 0 21px;
+          }
+        }
+      }
+    float: left;
+    width: 55%;
+    margin: 0 2.5%;
+  }
+}
+.user-img-container{
+  width: 8%;
+  display: inline-block;;
+  overflow: auto;
+  float: left;
+}
