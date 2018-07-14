@@ -1,16 +1,18 @@
 {
-  "name": "Projects",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "chat-example",
+  "version": "0.0.0",
+  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "main": "server.js",
+  "repository": "",
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o css/"
+    "start": "node server.js",
+    "sass": "node-sass -w client/scss/ -o client/css/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.9.0"
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "node-sass": "^4.9.2",
+    "socket.io": "~0.9.14"
   }
 }
