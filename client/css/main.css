@@ -29,7 +29,8 @@ header .logo-area {
   color: white;
   display: inline-block;
   width: 20%;
-  margin-left: -4px; }
+  margin-left: -4px;
+  padding: 0 38px; }
   header .logo-area a {
     text-decoration: none;
     font-size: 20px; }
